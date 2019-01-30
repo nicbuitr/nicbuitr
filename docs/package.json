@@ -9,6 +9,6 @@
   },
   "main": "index.html",
   "scripts": {
-    "start": "node server.js"
+    "start": "echo \"STARTED CORRECTLY\""
   }
 }
