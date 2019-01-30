@@ -7,7 +7,5 @@
     "type": "git",
     "url": "https://github.com/nicbuitr/nicbuitr.git"
   },
-  "scripts": {
-    "start": "index.html"
-  }
+  "main": "index.html"
 }
