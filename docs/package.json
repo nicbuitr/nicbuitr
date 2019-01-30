@@ -9,6 +9,6 @@
   },
   "main": "index.html",
   "scripts": {
-    "start": ""
+    "start": "echo \"STARTED CORRECTLY\""
   }
 }
