@@ -18,13 +18,13 @@ This project is my Curriculum Vitae Web App, its built with React.js, Sass and P
 
 ## How To View:
 
-Just click here [react-sass-parcel-boilerplate](https://nicbuitr.github.io/react-sass-parcel-boilerplate/)
+Just click here [Nicbuitr](https://nicbuitr.github.io/nicbuitr/)
 
 ## How To Download:
 
 Just download or clone the repo:
 
-    $ git clone https://github.com/nicbuitr/react-sass-parcel-boilerplate.git
+    $ git clone https://github.com/nicbuitr/nicbuitr.git
 
 ## Installation
 
