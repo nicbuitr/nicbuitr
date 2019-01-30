@@ -10,7 +10,9 @@
   "main": "index.jsx",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "parcel build ./src/index.html --out-dir docs --public-url ./",
+    "heroku-prebuild": "",
+    "heroku-postbuild": "cd docs"
   },
   "keywords": [],
   "dependencies": {
