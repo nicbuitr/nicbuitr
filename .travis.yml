@@ -4,6 +4,8 @@ node_js:
 install: true
 script:
 - echo "Skipping tests"
+before_deploy:
+  - cd docs
 deploy:
   provider: heroku
   api_key:
