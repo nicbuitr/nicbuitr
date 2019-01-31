@@ -10,7 +10,7 @@ script:
 - echo "Skipping tests"
 - curl https://cli-assets.heroku.com/install.sh | sh
 - cd docs 
-- heroku login i
+- heroku login -i
 - $HEROKU_USER
 - $HEROKU_PASS
 - heroku git:remote -a nicbuitr
