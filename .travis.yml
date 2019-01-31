@@ -4,9 +4,8 @@ node_js:
 install: true
 script:
 - echo "Skipping tests"
-after_deploy:
+before_deploy:
   - cd docs
-  - "echo \"<?php header( 'Location: /index.html' ) ;  ?>\" > index.php"
 deploy:
   provider: heroku
   api_key:
