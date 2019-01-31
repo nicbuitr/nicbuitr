@@ -2,19 +2,8 @@ language: node_js
 node_js:
 - node
 install: true
-HEROKU_USER:
-  secure: ccv2f8+KQfzGJIFRuTjZCg0uyGkGWAexf3h+WMFhUNVqcMIbHF8+9accA29zse+acPPexAzCIO9aWUocugRC9GfMj0U609ZVlYCs4jH/q+h9AehBcJZ5CG/XGdzeC41BsLi4MC3Xt+7oT7i8MDpbMmKyt8DAiI/CXa2dyVWu7u36jfDfgU04C9IoJsZrFchR7vtX9/VKfWSrN39qBf2VLknM7zPZcPpwynqT8ai76t6Ct9+BCKTNwOIsRQXd/q1Vfpwlj44GxXD8VhaoFJTzE/UmgmW+pVBslNmhJkb75Sv2PrpyTIBqltDFGqNEZV2qnqxs0Tnfp4wuHoDCP4quhX4PghXr6qgvGsqbK8OxAnwEMUPtZl+i3v0l0zO/NiIUYP2lrZ/VcCQnUwuovkX9TNbBvtQUtNtYr7f90cLk1lIbEPWV8pYLUzcCog/qXsCeVMCMAB81gce22ESrHyCznanG8ed0ejIKhjUIDAuUPv5907wAtAJaJpUdadY34clZPYgyeU9pF/DlfBgkU9bsqQdzL/0lC2qHYIvgRlCpiBQETpyWNo/JmZNoD6SB1fRxqaHdlX4cC3yiHqyWEJQyuFcysWORt1ZLmI49YG4J1F3MgcgML3ImeTYwQn7JoW1XM/FfU94blIy7OF1ztGfpo4IwxruIFh/++Sq64CxqhXI=
-HEROKU_PASS:
-  secure: HCMBnUN1VVIQCBeyXhhkcPR/k1T/80DT+JyACMHHIljPhq1m+TcoUZmXC4Nhn9tgtTHFYEisYYZIeH/GuUqBZONy0F8Hlb+11DMp/7rOIcUV+wgboKCiQVXot+SP2PnIbgkeaV7RpAL0YCjtwDzHMd2kdvtbN8WPRXlvRHwiF5lbfBuMHFpd/2txVLMMlm/gb95jnMyWlIcPxIBnwII/Hp4UEQQzdamXRtoNn63+PZPQAzj1mTjEOX54HScgUG8O/Ersv10veEBxZELyNx6svtMp8hDWRvf/mTlMmNQGSs3Z6EAczg+KHInnxLU7pYn4BrEkA2QquF5LXmYDF/Xmc8S4jkCq/nCufDTHGBf36gqKOLvKtYONWtimBqBsro1k5bT1Fnrj9fSnLK+2SxSL7SIbD/gpKXGXufCZ92lxEbUTivXAgT3Yt6oiKa1VK54zrcm85iiaoxUN9fR0llOrGAE0mSCIeOtXJl3DG44JlMLXKyUCPlvpu3SWeygnfIyGzvK0fgUkTdRmyzL24KDL8D+m5NfzFAXwI8YKwpXUrV0dMe5HyDIjK+Vb4dHpY6m8NMSXKQADkACjtqvwUnkUlJzt/adWDQ1BQqxWYsjB/+rNTurLxHY0LMel3Vqhtcy6l2ci8zStNobKExcGn6yYZfp8WUhuKztDTx9ci3A2Dyk=
 script:
 - echo "Skipping tests"
-- curl https://cli-assets.heroku.com/install.sh | sh
-- cd docs 
-- heroku login -i
-- $HEROKU_USER
-- $HEROKU_PASS
-- heroku git:remote -a nicbuitr
-- git push heroku master
 # deploy:
 #   provider: heroku
 #   api_key:
