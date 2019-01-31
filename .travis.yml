@@ -2,24 +2,26 @@ language: node_js
 node_js:
 - node
 install: true
+HEROKU_USER:
+  secure: ccv2f8+KQfzGJIFRuTjZCg0uyGkGWAexf3h+WMFhUNVqcMIbHF8+9accA29zse+acPPexAzCIO9aWUocugRC9GfMj0U609ZVlYCs4jH/q+h9AehBcJZ5CG/XGdzeC41BsLi4MC3Xt+7oT7i8MDpbMmKyt8DAiI/CXa2dyVWu7u36jfDfgU04C9IoJsZrFchR7vtX9/VKfWSrN39qBf2VLknM7zPZcPpwynqT8ai76t6Ct9+BCKTNwOIsRQXd/q1Vfpwlj44GxXD8VhaoFJTzE/UmgmW+pVBslNmhJkb75Sv2PrpyTIBqltDFGqNEZV2qnqxs0Tnfp4wuHoDCP4quhX4PghXr6qgvGsqbK8OxAnwEMUPtZl+i3v0l0zO/NiIUYP2lrZ/VcCQnUwuovkX9TNbBvtQUtNtYr7f90cLk1lIbEPWV8pYLUzcCog/qXsCeVMCMAB81gce22ESrHyCznanG8ed0ejIKhjUIDAuUPv5907wAtAJaJpUdadY34clZPYgyeU9pF/DlfBgkU9bsqQdzL/0lC2qHYIvgRlCpiBQETpyWNo/JmZNoD6SB1fRxqaHdlX4cC3yiHqyWEJQyuFcysWORt1ZLmI49YG4J1F3MgcgML3ImeTYwQn7JoW1XM/FfU94blIy7OF1ztGfpo4IwxruIFh/++Sq64CxqhXI=
+HEROKU_PASS:
+  secure: HCMBnUN1VVIQCBeyXhhkcPR/k1T/80DT+JyACMHHIljPhq1m+TcoUZmXC4Nhn9tgtTHFYEisYYZIeH/GuUqBZONy0F8Hlb+11DMp/7rOIcUV+wgboKCiQVXot+SP2PnIbgkeaV7RpAL0YCjtwDzHMd2kdvtbN8WPRXlvRHwiF5lbfBuMHFpd/2txVLMMlm/gb95jnMyWlIcPxIBnwII/Hp4UEQQzdamXRtoNn63+PZPQAzj1mTjEOX54HScgUG8O/Ersv10veEBxZELyNx6svtMp8hDWRvf/mTlMmNQGSs3Z6EAczg+KHInnxLU7pYn4BrEkA2QquF5LXmYDF/Xmc8S4jkCq/nCufDTHGBf36gqKOLvKtYONWtimBqBsro1k5bT1Fnrj9fSnLK+2SxSL7SIbD/gpKXGXufCZ92lxEbUTivXAgT3Yt6oiKa1VK54zrcm85iiaoxUN9fR0llOrGAE0mSCIeOtXJl3DG44JlMLXKyUCPlvpu3SWeygnfIyGzvK0fgUkTdRmyzL24KDL8D+m5NfzFAXwI8YKwpXUrV0dMe5HyDIjK+Vb4dHpY6m8NMSXKQADkACjtqvwUnkUlJzt/adWDQ1BQqxWYsjB/+rNTurLxHY0LMel3Vqhtcy6l2ci8zStNobKExcGn6yYZfp8WUhuKztDTx9ci3A2Dyk=
 script:
 - echo "Skipping tests"
-# - curl https://cli-assets.heroku.com/install.sh | sh
-# - cd docs 
-# - heroku login
-# - HEROKU_USERNAME
-# - HEROKU_PASSWORD
-# - heroku git:remote -a nicbuitr
-# - git push heroku master
-before_deploy:
-  - cd docs
-deploy:
-  provider: heroku
-  api_key:
-    secure: q7UXLY/Fp8OY3+ZQspHlWowIsF48KfTgUN1AZBKkQiPwZg1eQYrjK4TF6COv6MLGqkfYXxonbtWZI8Zoy8IZu9Fdfcb5njihWjw8hlNVtCHbJ8lp3B9ImOr6KTNh2QBKPaO27pXnM2unV1Lot9kjvB16TOekS6ZDXzrZfE/gQq5PChAIXhvTfwdjQFADgddtvdeI0rJbOOS3Gead4M837w/IoGN+YYuwat1sshEscul7W/cxfgyVuyh/D27t7YdwxqZnLbycvWIdJd8LMMaUYRsj4UPzBCaDD84rshIqRYUh1lAmKv4asTof3qCXpppDwd0CtVWktJMpg3TSqKTRWF2PhKe1ijGJyofZ1pgpJMrrRV7hH15bBaz+D/AE/VYXr3SgVFn/u17DX1OiCdZV62VQnxNNCa0kjNNGzvTRzwsoaCgf78q7aWMMyZZXxEk7YxfSHyWS/pBGRY7rOaONl7ma5kCv2gqcFbWqaTFcnNnTXAS6TCO9rHdaexpttMuMYY8jjv/lPchbFDFob23vDwnMKIHRMCv3DO4jeu+BlZyJbazZaZXKA+6ZbCT1erznx1a/wZMo7gkfdDAWncKJC0D0ORqf2IHmMcMd96OiA2BK0A8tlFyAOwYKDOb+Uppg21C83twf5Ao1PEuQzkKpuv3Tqpi8W50/NzcNtepHYEg=
-  app: nicbuitr
-  on:
-    repo: nicbuitr/nicbuitr
+- curl https://cli-assets.heroku.com/install.sh | sh
+- cd docs 
+- heroku login
+- $HEROKU_USER
+- $HEROKU_PASS
+- heroku git:remote -a nicbuitr
+- git push heroku master
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: q7UXLY/Fp8OY3+ZQspHlWowIsF48KfTgUN1AZBKkQiPwZg1eQYrjK4TF6COv6MLGqkfYXxonbtWZI8Zoy8IZu9Fdfcb5njihWjw8hlNVtCHbJ8lp3B9ImOr6KTNh2QBKPaO27pXnM2unV1Lot9kjvB16TOekS6ZDXzrZfE/gQq5PChAIXhvTfwdjQFADgddtvdeI0rJbOOS3Gead4M837w/IoGN+YYuwat1sshEscul7W/cxfgyVuyh/D27t7YdwxqZnLbycvWIdJd8LMMaUYRsj4UPzBCaDD84rshIqRYUh1lAmKv4asTof3qCXpppDwd0CtVWktJMpg3TSqKTRWF2PhKe1ijGJyofZ1pgpJMrrRV7hH15bBaz+D/AE/VYXr3SgVFn/u17DX1OiCdZV62VQnxNNCa0kjNNGzvTRzwsoaCgf78q7aWMMyZZXxEk7YxfSHyWS/pBGRY7rOaONl7ma5kCv2gqcFbWqaTFcnNnTXAS6TCO9rHdaexpttMuMYY8jjv/lPchbFDFob23vDwnMKIHRMCv3DO4jeu+BlZyJbazZaZXKA+6ZbCT1erznx1a/wZMo7gkfdDAWncKJC0D0ORqf2IHmMcMd96OiA2BK0A8tlFyAOwYKDOb+Uppg21C83twf5Ao1PEuQzkKpuv3Tqpi8W50/NzcNtepHYEg=
+#   app: nicbuitr
+#   on:
+#     repo: nicbuitr/nicbuitr
 cache:
   directories:
   - node_modules
