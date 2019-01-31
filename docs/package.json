@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/nicbuitr/nicbuitr.git"
   },
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "start": "echo \"STARTED CORRECTLY\""
   }
