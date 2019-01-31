@@ -4,15 +4,13 @@ node_js:
 install: true
 script:
 - echo "Skipping tests"
-before_deploy:
-  - cd docs
 deploy:
   provider: heroku
   api_key:
     secure: q7UXLY/Fp8OY3+ZQspHlWowIsF48KfTgUN1AZBKkQiPwZg1eQYrjK4TF6COv6MLGqkfYXxonbtWZI8Zoy8IZu9Fdfcb5njihWjw8hlNVtCHbJ8lp3B9ImOr6KTNh2QBKPaO27pXnM2unV1Lot9kjvB16TOekS6ZDXzrZfE/gQq5PChAIXhvTfwdjQFADgddtvdeI0rJbOOS3Gead4M837w/IoGN+YYuwat1sshEscul7W/cxfgyVuyh/D27t7YdwxqZnLbycvWIdJd8LMMaUYRsj4UPzBCaDD84rshIqRYUh1lAmKv4asTof3qCXpppDwd0CtVWktJMpg3TSqKTRWF2PhKe1ijGJyofZ1pgpJMrrRV7hH15bBaz+D/AE/VYXr3SgVFn/u17DX1OiCdZV62VQnxNNCa0kjNNGzvTRzwsoaCgf78q7aWMMyZZXxEk7YxfSHyWS/pBGRY7rOaONl7ma5kCv2gqcFbWqaTFcnNnTXAS6TCO9rHdaexpttMuMYY8jjv/lPchbFDFob23vDwnMKIHRMCv3DO4jeu+BlZyJbazZaZXKA+6ZbCT1erznx1a/wZMo7gkfdDAWncKJC0D0ORqf2IHmMcMd96OiA2BK0A8tlFyAOwYKDOb+Uppg21C83twf5Ao1PEuQzkKpuv3Tqpi8W50/NzcNtepHYEg=
   app: nicbuitr
   on:
-    repo: nicbuitr/nicbuitr
+    repo: nicbuitr/nicbuitr/docs
 cache:
   directories:
   - node_modules
