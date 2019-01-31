@@ -19,7 +19,7 @@ This project is my Curriculum Vitae Web App, its built with React.js, Sass and P
 ## How To View:
 ### Just click on either of these:
 
-[![GitHub Pages.](https://github.com/nicbuitr/f/blob/master/github_pages.png)](https://nicbuitr.github.io) |
+[![GitHub Pages.](https://github.com/nicbuitr/f/blob/master/github_pages.png)](https://nicbuitr.github.io/nicbuitr/) |
 [![Heroku](https://github.com/nicbuitr/f/blob/master/heroku.png)](https://nicbuitr.herokuapp.com)
 :---:|:---:
 
