@@ -4,7 +4,10 @@ node_js:
 install: true
 script:
 - echo "Skipping tests"
-- cd docs && git push heroku master
+- curl https://cli-assets.heroku.com/install.sh | sh
+- cd docs 
+- git push heroku master
+- heroku git:remote -a nicbuitr
 # deploy:
 #   provider: heroku
 #   api_key:
