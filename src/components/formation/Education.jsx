@@ -6,11 +6,11 @@ class Education extends Component {
     let ed = props.education;
     return (
       <div className="app__ed container font-secondary-color" id={props.id} tabIndex="0">
-        <h5><b>{ed.title} / {ed.institution}</b></h5>
-        <h6>
+        <div className="title"><b>{ed.title} / {ed.institution}</b></div>
+        <div className="dates">
           <i className="fa fa-calendar fa-fw"></i>
           {ed.end_date.replace(/\s/g, "").toUpperCase() === "FOREVER" ? ed.end_date : ed.start_date + " - " + ed.end_date}
-        </h6>
+        </div>
         <p>
           <i className="fa fa-graduation-cap fa-fw"></i>
           {ed.degree}
@@ -18,7 +18,7 @@ class Education extends Component {
         {ed.achievements
           .map((achievement, index) => {
             return (
-              <p key={"achievement_" + index} id={"achievement_" + index} tabIndex="0">
+              <p key={props.id + "_achievement_" + index} id={props.id + "_achievement_" + index} tabIndex="0">
                 <i className="fa fa-trophy fa-fw"></i>
                 {achievement}
               </p>

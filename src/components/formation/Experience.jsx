@@ -9,15 +9,15 @@ class Experience extends Component {
     let expDuration = props.parentCalculateDuration(exp.end_date, exp.start_date);
     return (
       <div className="app__exp container font-secondary-color fade" id={props.id} tabIndex="0">
-        <h5><b>{exp.job_title + " / " + exp.company}</b></h5>
-        <h6>
+        <div className="title"><b>{exp.job_title + " / " + exp.company}</b></div>
+        <div className="dates">
           <i className="fa fa-calendar fa-fw"></i>
           {exp.start_date} - {exp.end_date.replace(/\s/g, "").toUpperCase() === "CURRENT" ? <span className="current-tag">{exp.end_date}</span> : exp.end_date}
-        </h6>
-        <h6>
+        </div>
+        <div className="dates">
           <i className="fa fa-calendar-check fa-fw"></i>
           <Duration expDuration={expDuration} />
-        </h6>
+        </div>
         <p><b>
           {exp.skills.map((skill, i) => {
             return (
@@ -40,7 +40,7 @@ class Experience extends Component {
                       line.split(' - ').map((part, j) => {
                         return j === 1 ?
                           <span key={"exp_" + props.i + "_line_" + i + "_section_" + j}>
-                            <a href={"http://" + part} target="_blank">{part}</a>
+                            <a href={"http://" + part} target="_blank" rel="noopener">{part}</a>
                           </span>
                           :
                           <span key={"exp_" + props.i + "_line_" + i + "_section_" + j}>

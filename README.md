@@ -14,13 +14,13 @@ This project is my Curriculum Vitae Web App, its built with React.js, Sass and P
 
 ## Changes (DD/MM/AAAA)
 
+- 04/06/2021 Performance improvements and data update.
 - 30/01/2019 Initial Upload.
 
 ## How To View:
 ### Just click on either of these:
 
-[![GitHub Pages.](https://github.com/nicbuitr/f/blob/master/github_pages.png)](https://nicbuitr.github.io/nicbuitr/) |
-[![Heroku](https://github.com/nicbuitr/f/blob/master/heroku.png)](https://nicbuitr.herokuapp.com)
+[![GitHub Pages.](https://github.com/nicbuitr/f/blob/master/github_pages.png)](https://nicbuitr.github.io/nicbuitr/)|[![Heroku](https://github.com/nicbuitr/f/blob/master/heroku.png)](https://nicbuitr.herokuapp.com)
 :---:|:---:
 
 ## How To Download:

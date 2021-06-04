@@ -37,11 +37,11 @@ class Profile extends Component {
               </span>
             </div>
             <div className="profile__social">
-              <a href={profile.github} target="_blank">
+              <a href={profile.github} target="_blank" rel="noopener" alt="URL to Nicbuitr's GitHub">
                 <i className="fa fa-github fa--36 fa--opacity"></i>
                 <div>GitHub</div>
               </a>
-              <a href={profile.linkedin} target="_blank">
+              <a href={profile.linkedin} target="_blank" rel="noopener" alt="URL to Nicbuitr's LinkedIn">
                 <i className="fa fa-linkedin fa--36 fa--opacity"></i>
                 <div>LinkedIn</div>
               </a>

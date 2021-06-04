@@ -7,7 +7,8 @@
   "github": "https://github.com/nicbuitr",
   "linkedin": "https://www.linkedin.com/in/nicolasbuitrago/",
   "summary": [
-    "I am a highly committed, innovative, responsible and perfectionist systems and computer engineer, focused on software engineering and related subjects, who strives to provide excellent results, aiming towards growth and improvement on both professional and personal regards by keeping a constant learning habit. As a result, I possess the experience to code and develop quality software that fulfills the requirements and procures the best programming practices following the software development cycle frameworks. This has led me to become a strategic asset and role model at my jobs and enterprises, encouraging me to carry on with my endeavors. I seek to be part of a market-leading company where I can bring knowledge, expertise and value to the business."
+    "I am a highly committed, innovative, responsible and perfectionist systems and computer engineer, focused on software engineering and related subjects, who strives to provide excellent results, aiming towards growth and improvement on both professional and personal regards by keeping a constant learning habit. As a result, I possess the experience to code and develop quality software that fulfills the requirements and procures the best programming practices following the software development cycle frameworks. This has led me to become a strategic asset and role model at my jobs and enterprises, encouraging me to carry on with my endeavors. I seek to be part of a market-leading company where I can bring knowledge, expertise and value to the business.",
+    "Currently looking for Software Developer(Web/Frontend) opportunities abroad or remote with dollar based salary."
   ],
   "personal_skills": [
     "Fast Learner",
@@ -45,10 +46,46 @@
   ],
   "work_experiences": [
     {
+      "job_title": "Web Engineer",
+      "company": "Google on Behalf of Huge Inc",
+      "start_date": "April 2019",
+      "end_date": "Current",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Sass",
+        "Node",
+        "Git",
+        "GitHub",
+        "Visual Studio Code",
+        "Jira",
+        "LeanKit/Stash",
+        "Buganizer",
+        "Gerrit",
+        "Kanban",
+        "SCRUM",
+        "Agile",
+        "Responsive",
+        "Grow.io",
+        "Jinja2",
+        "YAML",
+        "Kintaro"
+      ],
+      "job_description": [
+        "Working on Google for Retail Website project.",
+        "Worked on Google Assistant Website project.",
+        "Contribute building web applications using HTML, CSS and JavaScript along with the latest technologies, web stacks and frameworks. .",
+        "Working with SCRUM teams using Agile methodologies understanding their workflow and processes along with related tools such as JIRA, LeanKit, Buganizer and Kanban.",
+        "Knowledge on responsive and accessible web design and development.",
+        "Constantly look for ways to improve processes quality and efficiency."
+      ]
+    },
+    {
       "job_title": "Software Engineer",
       "company": "Personal Projects",
       "start_date": "January 2017",
-      "end_date": "Current",
+      "end_date": "March 2019",
       "skills": [
         "HTML",
         "CSS",
@@ -86,6 +123,7 @@
         "Deploy the web applications on either GitHub Pages or Heroku.",
         "Handle tests with Mocha.js framework, Chai.js library and Travis CI.",
         "Projects where built using Web-HCJR (HTML, CSS, JavaScript, React).",
+        "2019/02 - github.com/nicbuitr/daily-feed/ - Web Application that provides different daily facts built with Web-HCJR, Material UI, Fetching from APIs, Parcel and Node.",
         "2019/01 - github.com/nicbuitr/nicbuitr/ - Personal CV Web Application built with Web-HCJR, Sass, Parcel and Node.",
         "2019/01 - github.com/nicbuitr/w3css-cv-template-react-sass/ - CV Template Web Application built with Web-HCJR, Sass, Parcel and Node.",
         "2018/12 - github.com/nicbuitr/react-sass-parcel-boilerplate/ - Boilerplate Web Application built with Web-HCJR, Sass, Parcel and Node.",

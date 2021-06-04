@@ -51,12 +51,12 @@ class App extends Component {
       }
     }
     else {
-      let fadeInItems = document.getElementsByClassName("fade");
-      for (let i = 0; i < fadeInItems.length; i++) {
-        if (window.pageYOffset > (fadeInItems[i].offsetTop - window.innerHeight + 50)) {
-          fadeInItems[i].classList.add("fade--in");
+      let fadeInItems = document.querySelectorAll(".fade");
+      fadeInItems.forEach((elem) => {
+        if (window.pageYOffset > (elem.offsetTop - window.innerHeight + 50)) {
+          elem.classList.add("fade--in");
         }
-      }
+      });
     }
 
     let searchBox = document.getElementById("app__search-box");
@@ -84,7 +84,7 @@ class App extends Component {
         }
       }
       this.setState({ intervals: [] });
-      if (target != undefined && target.classList.contains("button--expanded")) {
+      if (target !== undefined && target.classList.contains("button--expanded")) {
         target.classList.remove("button--expanded");
       }
     }
@@ -169,7 +169,7 @@ class App extends Component {
     filtSkillPctgArray.sort((a, b) => b.pctg - a.pctg);
 
     let searchedSkillIndex = filtSkillPctgArray.findIndex(item => item.skill.toUpperCase().includes(searchString.replace(/\s/g, "").toUpperCase()));
-    if (searchedSkillIndex != -1) {
+    if (searchedSkillIndex !== -1) {
       let searchedSkill = filtSkillPctgArray[searchedSkillIndex];
       filtSkillPctgArray.splice(searchedSkillIndex, 1);
       filtSkillPctgArray.unshift(searchedSkill);
@@ -227,7 +227,7 @@ class App extends Component {
   calculateDuration(dateString2, dateString1) {
     let date1 = new Date(dateString1.split(' ')[0] + ' 1 ' + dateString1.split(' ')[1] + ' 00:00:00');
     let nDate = new Date();
-    let date2 = dateString2.toUpperCase() === "CURRENT" ? new Date(nDate.getFullYear(), nDate.getMonth() - 1, 1) : new Date(dateString2.split(' ')[0] + ' 15 ' + dateString2.split(' ')[1] + ' 00:00:00');
+    let date2 = dateString2.toUpperCase() === "CURRENT" ? new Date(nDate.getFullYear(), nDate.getMonth() - 2, 1) : new Date(dateString2.split(' ')[0] + ' 15 ' + dateString2.split(' ')[1] + ' 00:00:00');
     let diff = (date2.getTime() - date1.getTime()) / 1000;
     diff /= (60 * 60 * 24 * 7 * 4);
     return Math.abs(Math.ceil(diff));

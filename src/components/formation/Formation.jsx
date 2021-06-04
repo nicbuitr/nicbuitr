@@ -20,10 +20,10 @@ class Formation extends Component {
               <i className="fa fa-suitcase fa-fw fa--36"></i>
               Work Experience
             </h2>
-            <h6>
+            <h3>
               <i className="fa fa-calendar-check fa-fw"></i>
               <Duration expDuration={props.filteredExpDuration} />
-            </h6>
+            </h3>
           </div>
           <div className="app__search-box" id="app__search-box">
             <input type="text" aria-label="Type to search" ref="textInput" name="searchString"
@@ -49,7 +49,7 @@ class Formation extends Component {
           </div>
           {props.filteredEducation
             .map((education, index) => {
-              return (<Education education={education} key={"education" + index} id={"education" + index} i={index} total={props.filteredEducation.length} />)
+              return (<Education education={education} key={"education_" + index} id={"education_" + index} i={index} total={props.filteredEducation.length} />)
             })}
         </div>
         <div className="app__interests app__sheet container fade" tabIndex="0">
